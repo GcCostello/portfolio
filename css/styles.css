@@ -121,6 +121,15 @@ p {
 
 /* MAIN CONTENT */
 
+.header {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.header > h1 {
+  margin-right:auto;
+}
+
 .main {
     grid-area: content;
     background-color: var(--white);
