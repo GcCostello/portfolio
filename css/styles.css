@@ -44,15 +44,18 @@ h1 {
 h2 {
     color: var(--primary);
         font-family: 'Overpass';
-    font-weight: 600;
+    font-weight: 900;
     font-size: 1.6rem;
 }
 
 h3 {
     color: var(--primary);
-        font-family: 'Overpass';
-    font-weight: 600;
+    font-family: 'Overpass';
+    font-weight: 800;
     font-size: 1.4rem;
+}
+
+.sidebar > h3 {
     padding-top: 30px;
 }
 
