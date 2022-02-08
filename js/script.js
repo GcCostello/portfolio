@@ -1,0 +1,1 @@
+document.getElementById('casestudy_1').innerHTML = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non sit quod doloremque veniam est numquam illum fugit enim fugiat ut, quis qui explicabo accusamus ducimus voluptates voluptate repellat voluptatem cumque!";
