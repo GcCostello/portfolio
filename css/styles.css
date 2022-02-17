@@ -7,9 +7,9 @@
 }
 
 
-/* html {
+html, body {
     height: 100vh;
-} */
+}
 
 :root {
     font-size: 16px;
@@ -64,6 +64,15 @@ p {
     font-size: 1rem;
     padding-bottom: 10px;
     font-weight: 400;
+}
+
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent);
 }
 
 
@@ -138,6 +147,19 @@ p {
     padding: 50px 50px 0 50px;
 }
 
+.word-cloud {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.word-cloud > li {
+    margin-right: 20px;
+}
+
 .portfolioImage {
     max-height: 300px;
     padding-right: 20px;
@@ -145,6 +167,28 @@ p {
 
 .content {
     display: flex;
-    padding-top: 10px;
+    padding-top: 50px;
     width: 100%;
+}
+
+/* WORD CLOUD STYLES */
+
+.one {
+    font-size: 2rem;
+}
+
+.two {
+    font-size: 1.8rem;
+}
+
+.three {
+    font-size: 1.6rem;
+}
+
+.four {
+    font-size: 1.4rem;
+}
+
+.five {
+    font-size: 1.2rem;
 }
