@@ -25,7 +25,7 @@ html, body {
     font-family: 'Poppins', sans-serif;
 }
 
-.wrapper {
+main {
     display: grid;
     grid-template-columns: auto 2fr;
     grid-template-areas: "sidebar content" "sidebar content" "sidebar content";
@@ -130,12 +130,16 @@ a:hover {
 
 /* MAIN CONTENT */
 
-.header {
+header {
   display: flex;
   margin-bottom: 20px;
 }
 
-.header > h1 {
+header > nav {
+    display: flex;
+}
+
+header > h1 {
   margin-right:auto;
 }
 
@@ -147,7 +151,7 @@ a:hover {
     padding: 50px 50px 0 50px;
 }
 
-.word-cloud {
+.wordCloud {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -156,7 +160,7 @@ a:hover {
     justify-content: center;
 }
 
-.word-cloud > li {
+.wordCloud > li {
     margin-right: 20px;
 }
 
