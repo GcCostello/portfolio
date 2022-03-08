@@ -1,0 +1,8 @@
+/* UTILITIES */
+
+.test {
+    max-width: 10rem;
+    height: 100px;
+    margin: 0 auto;
+    background-color: var(--primary);
+}
