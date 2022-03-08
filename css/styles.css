@@ -1,14 +1,9 @@
-/* MAIN LAYOUT */
+/* MAIN LAYOUT & GLOBAL STYLES */
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-
-html, body {
-    height: 100vh;
 }
 
 :root {
@@ -28,29 +23,25 @@ html, body {
 main {
     display: grid;
     grid-template-columns: auto 2fr;
+    grid-template-rows: auto;
     grid-template-areas: "sidebar content" "sidebar content" "sidebar content";
 }
-
-
-/* GLOBAL STYLES */
-
-h1 {
+h1, h2, h3, h4 {
     color: var(--primary);
     font-family: 'Overpass';
+}
+
+h1 {
     font-weight: 900;
     font-size: 2rem;
 }
 
 h2 {
-    color: var(--primary);
-    font-family: 'Overpass';
     font-weight: 900;
     font-size: 1.6rem;
 }
 
-h3 {
-    color: var(--primary);
-    font-family: 'Overpass';
+h3, h4 {
     font-weight: 800;
     font-size: 1.2rem;
 }
@@ -81,7 +72,7 @@ a:hover {
 .sidebar {
     grid-area: sidebar;
     background-color: var(--white);
-    max-height: 100vh;
+    min-height: auto;
     text-align: center;
     padding: 50px 50px 0 50px;
 }
@@ -115,6 +106,7 @@ a:hover {
 }
 
 .socialItem {
+    color: var(--primary);
     font-size: 2rem;
 }
 
@@ -146,7 +138,7 @@ header > h1 {
 .main {
     grid-area: content;
     background-color: var(--white);
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     padding: 50px 50px 0 50px;
 }
@@ -164,10 +156,16 @@ header > h1 {
     margin-right: 20px;
 }
 
-.portfolioImage {
+.portfolioImage_left {
     height: 100%;
-    max-width: 30%;
-    padding-right: 20px;
+    max-width: 40%;
+    padding-right: 2rem;
+}
+
+.portfolioImage_right {
+    height: 100%;
+    max-width: 40%;
+    padding-left: 2rem;
 }
 
 .content {
