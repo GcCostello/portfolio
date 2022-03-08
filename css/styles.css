@@ -81,7 +81,7 @@ a:hover {
 .sidebar {
     grid-area: sidebar;
     background-color: var(--white);
-    height: 100vh;
+    max-height: 100vh;
     text-align: center;
     padding: 50px 50px 0 50px;
 }
@@ -199,28 +199,13 @@ header > h1 {
 }
 
 @media screen and (max-width: 1000px) {
-    .wrapper {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-areas: "content1" "content2" "content3";
-    }
-
-    .sidebar {
-        grid-area: content1;
-        height: 100%;
-    }
-
-    .main {
-        grid-area: content2;
-        height: 100%;
+    main {
+        display: block;
     }
 
     .menuItem {
         display: inline-block;
-    }
-
-    .menuItem:not(:first-child) {
-        margin-right: 2rem;
+        margin-right: 1.5rem;
     }
 
     .content {
