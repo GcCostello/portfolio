@@ -64,3 +64,7 @@ main {
     max-width: 60rem;
     margin: 0 auto;
 }
+
+.flow > * + * {
+    margin-top: var(--flow-space, 1em);
+  }
