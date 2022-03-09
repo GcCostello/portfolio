@@ -1,6 +1,8 @@
 /* GLOBAL STYLES */
 
 .wordCloud {
+    font-family: 'Overpass';
+    font-weight: 600;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
