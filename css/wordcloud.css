@@ -1,0 +1,36 @@
+/* GLOBAL STYLES */
+
+.wordCloud {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wordCloud > li {
+    margin-right: 20px;
+}
+
+/* WORD CLOUD STYLES */
+
+.one {
+    font-size: 2rem;
+}
+
+.two {
+    font-size: 1.8rem;
+}
+
+.three {
+    font-size: 1.6rem;
+}
+
+.four {
+    font-size: 1.4rem;
+}
+
+.five {
+    font-size: 1.2rem;
+}
