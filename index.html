@@ -1,88 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My resumé</title>
+    <title>GcCostello</title>
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="wrapper">
     <main>
-        <div class="sidebar">
-            <img src="images/profil_500.jpg" alt="Black and white portrait of Glenn">
-            <h2>Glenn Costello</h2>
-            <h3>Graphic Designer, web developer & more...</h3>
 
-            <div class="socialMedia">
-                <div class="socialItem">
-                    <i class="fab fa-linkedin"></i>
-                </div>
-                <div class="socialItem">
-                    <i class="fab fa-facebook-messenger"></i>
-                </div>
-                <div class="socialItem">
-                    <i class="fab fa-facebook"></i>
-                </div>
-                <div class="socialItem">
-                    <i class="fab fa-instagram"></i>
-                </div>
-                <div class="socialItem">
-                    <i class="fab fa-flickr"></i>
-                </div>
-            </div>
-            
+        <header>
             <nav>
-                <div class="menuItem">
-                    <a href="index.html"><i class="fas fa-user"></i>About</a>
-                </div>
-                <div class="menuItem">
-                    <a href="portfolio.html"><i class="fas fa-briefcase"></i>Portfolio</a>
-                </div>
-                <div class="menuItem">
-                    <i class="fas fa-phone"></i>Contact
-                </div>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#fotografering">Foto</a>
+                <a href="#kontakt">Kontakt</a>
             </nav>
-        
-        </div>
+        </header>
 
-        <div class="main">
+        <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
 
-            <article>
-                <header>
-                    <h1>Who am I?</h1>
-                </header>
+        <section id="start">
 
-                <div class="mainContent">
-                    <p class="text">Currently studying for a bachelor's degree in graphic design and web development at Högskolan Dalarna - will graduate sommer 2022.</p>
-                    <p class="text">At the moment based in Falun, Dalarna, Sweden and live with my wife and 8 children.</p>
-                    <p class="text">I am a bumblebee enthusiast, birdwatcher, photographer and nature lover. Outside in nature most of my free time.</p>
-                    <p class="text">I have built and administrated websites using WordPress. I also have knowledge of HTML, CSS and JS and have built websites using just code.</p>
-                    <p class="text">I use multiple Adobe CC software - Photoshop, Lightroom, XD, InDesign, Illustrator, Premiere Pro & After Effects. I'm a huge fan of Figma too.</p>
+            <div class="flow">
+                <h1>
+                    Här har ni <strong>mig!</strong>
+                </h1>
+                <img class="profileMobile" src="img/profil_1x1.jpg" alt="">
+                <h3>Energisk designer med många barn och ännu mer kreativitet söker hem </h3>
+                <p>
+                    Galet många barn är det inte men det räcker ändå till ett 7-mannalag med en avbytare i alla
+                    fall. Efter tre års studier är jag redo att lösa kreativa problem och förutom att kunna ställa upp
+                    ett fotbollslag på planen har familjelivet lärt mig att behärska och organisera kaos – många
+                    bollar i luften? Inga problem! <br>Min <a href="#portfolio">portfolio</a> får föra min talan:
+                </p>
+                <p>
+                    <em>PS. Även om jag skrev ”hem” i rubriken menar jag mest dagtid, jag sover gärna hemma.</em>
+                </p>
+            </div>
+            <img class="profile" src="img/profil_1x1.jpg" alt="">
+
+        </section>
+
+        <section id="portfolio" class="flow">
+
+            <h2><strong>Portfolio</strong></h2>
+
+            <div class="alsterContainer">
+
+                <div class="alsterCard">
+                    <a href="magasin.html">
+                        <img src="img/Magazine_Mockup_1_1x1.jpg" alt="">
+                    </a>
                 </div>
-            </article>    
-            <ul class="wordCloud">
-                <li class="one">Adobe Creative Cloud</li>
-                <li class="three">Photoshop</li>
-                <li class="two">Lightroom</li>
-                <li class="two">Photography</li>
-                <li class="four">Nikon</li>
-                <li class="four">Illustrator</li>
-                <li class="five">Branding</li>
-                <li class="four">Logo design</li>
-            </ul>
-        </div>  
+
+                <div class="alsterCard">
+                    <a href="bokningssystem.html">
+                        <img src="img/interaktionsdesign.png" alt="">
+                    </a>
+                </div>
+
+                <div class="alsterCard">
+                    <a href="infografik.html">
+                        <img src="img/infografik_tableau.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="alsterCard">
+                    <a href="parkeringsapp.html">
+                        <img src="img/spot_1x1.png" alt="">
+                    </a>
+                </div>
+
+                <div class="alsterCard">
+                    <a href="jjthai.html">
+                        <img src="img/start_ny_1x1.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="fotografering" class="flow">
+
+            <h2><strong>Foto</strong></h2>
+            <p>
+                Ett starkt intresse jag har utöver digital design är fotografering och biologisk mångfald - en perfekt kombination. 
+                Se min <a href="https://www.flickr.com/photos/gccostello/albums" target="_blank">Flickr <i class="fa-solid fa-arrow-up-right-from-square"></i></a> för fler och högupplösta bilder!
+            </p>
+            <div class="galleri">
+
+                <div>
+                    <img src="img/bi_1.jpg" alt="">
+                    <p class="imageText">Artporträtt av tandsandbi</p>
+                </div>
+            
+                <div>
+                    <img src="img/koncert_1.jpg" alt="">
+                    <p class="imageText">Apocolyptica under Sabaton Open Air</p>
+                </div>
+
+                <div>
+                    <img src="img/portratt_1.jpg" alt="">
+                    <p class="imageText">Äldsta dottern</p>
+                </div>
+
+                <div>
+                    <img src="img/svartsnappa_1.jpg" alt="">
+                    <p class="imageText">Födosökande svartsnäppa</p>
+                </div>
+
+                <div>
+                    <img src="img/skinnbagge_1.jpg" alt="">
+                    <p class="imageText">Skinnbagge i perfekt ljus</p>
+                </div>
+                
+                <div>
+                    <img src="img/koncert_2.jpg" alt="">
+                    <p class="imageText">Avatar under Sabaton Open Air</p>
+                </div>
+                
+                <div>
+                    <img src="img/gravidfoto.jpg" alt="">
+                    <p class="imageText">Low key gravidfoto</p>
+                </div>
+                
+                <div>
+                    <img src="img/spindel_1.jpg" alt="">
+                    <p class="imageText">Krabbspindel på röllika</p>
+                </div>
+
+                <div>
+                    <img src="img/rodvingetrast.jpg" alt="">
+                    <p class="imageText">Sjungande rödvingetrast</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="kontakt" class="flow">
+
+            <h2>
+                <strong>Kontakt!</strong>
+            </h2>
+            <p>
+                Intresserade av att arbeta tillsammans? Tveka inte, ta kontakt redan idag!
+            </p>
+            <div class="kontaktInfo">
+                    <p><a href="tel:+46707178449"><i class="fa-solid fa-phone"></i>  070 71 78 449</a></p>
+                    <p><a href="mailto:glenncostello11@gmail.com"><i class="fa-solid fa-at"></i>  glenncostello11@gmail.com</a></p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/GcCostello/" target="_blank">
+                    <i class="fa-brands fa-facebook-square"></i>
+                </a>
+                <a href="http://m.me/gccostello" target="_blank">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </a>
+                <a href="https://www.instagram.com/gccostello/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.flickr.com/photos/gccostello/albums" target="_blank">
+                    <i class="fa-brands fa-flickr"></i>
+                </a>
+                <a href="https://www.behance.net/glenncostello" target="_blank">
+                    <i class="fa-brands fa-behance-square"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/glenn-costello-90b196198/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                
+            </div>
+
+        </section>
+
+        <footer>
+
+            <p>copyright GcCostello</p>
+
+        </footer>
 
     </main>
-        <script src="/js/script.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
